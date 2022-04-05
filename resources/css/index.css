@@ -1,0 +1,75 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;700&display=swap');
+
+/* Global */
+html,
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Display', sans-serif;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+header {
+    height: 64px;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    background-color: white;
+    z-index: 10;
+}
+
+.logo-container {
+    display: flex;
+    height: 32px;
+    margin-left: 24px;
+    align-items: center;
+}
+
+.logo-container img {
+    height: 100%;
+    margin: auto;
+    margin-right: 3px;
+}
+
+.logo-container span {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.logo-container span:first-of-type {
+    font-weight: bold;
+}
+
+.list-container {
+    margin-right: 24px;
+}
+
+.list-container ul {
+    display: flex;
+    justify-content: left;
+}
+
+.list-container ul li {
+    margin-right: 16px;
+}
+
+/* Showcase */
+
+
+/* Transitions */
+.list-container ul li:hover {
+    opacity: 0.5;
+    text-decoration: underline lightblue;
+}
