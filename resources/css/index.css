@@ -46,7 +46,6 @@ img {
 /* Utilities */
 .section {
     background-color: var(--background-1);
-    padding: 32px 24px;
 }
 
 .main-container {
@@ -55,7 +54,7 @@ img {
 
 .image-container {
     flex-basis: 60%;
-    margin-right: 24px;
+    margin-right: 40px;
 }
 
 /* Header */
@@ -132,14 +131,14 @@ nav {
     position: relative;
 }
 
-#events .image-container {
+.image-container {
     margin: 32px 24px;
 }
-#events .image-container h1 {
+.image-container h1 {
     font-size: 40px;
 }
 
-#events .image-container p {
+.image-container p {
     margin: 24px 0 32px 0;
 }
 
@@ -153,6 +152,7 @@ nav {
     width: 40%;
     border-left: 2px solid gainsboro;
     padding: 16px 0 0px;
+    height: max-content;
 }
 
 .events-container .event {
@@ -168,7 +168,7 @@ nav {
 
 .events-container .event .img-container{
     width: 35%;
-    height: 100%;
+    height: auto;
     margin-right: 16px;
     padding: 16px 0px 16px 16px;
 }
@@ -189,6 +189,59 @@ nav {
 .event h1 {
     font-size: 15px;
 }
+
+/* Learning */
+#learning.section {
+    padding: 32px 72px;
+}
+
+#learning .heading-container {    
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+#learning .learning-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 32px;
+}
+
+.learning-box {
+    background-color: white;
+    width: 100%;
+}
+
+#learning .image-container{
+    margin: 0px;
+    width: 100%;
+}
+
+.learning-box .event-description {
+    margin: 16px 16px 24px 16px;
+}
+
+.learning-box .event-description h1 {
+    font-size: 30px;
+}
+
+.learning-box .event-description h3{
+    margin: 8px 0;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+/* Thesis */
+#thesis {
+    background-color: white;
+}
+
+#thesis video {
+    width: 100%;
+    height: auto;
+}
+
+
 
 /* Transitions */
 .list-container ul li:hover {
